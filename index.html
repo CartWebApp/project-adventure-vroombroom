@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameCanvas">
+        <div id="image">
+            <h1 id="title">Adventure Game</h1>
+        </div>
+        <div id="text"></div>
+        <div id="status">
+            <div id="health">
+                <p>Health</p>
+                <div id="health-bar">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div id="stamina">
+                <p>Stamina</p>
+                <div id="stamina-bar">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div id="detection">
+                <p>Detection</p>
+                <div id="detection-bar">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="status-bottom">
+                <p id="history">History</p>
+            </div>
+        </div>
+        <div id="read">
+            <div id="dialogue-history">
+                <p>Test One</p>
+                <p>Test two</p>
+            </div>
+            <p id="read-close">Close</p>
+        </div>
+    </div>
+    <audio src="/music/menu.mp3" autoplay loop></audio>
+    <script src="game.js"></script>
+</body>
+</html>
