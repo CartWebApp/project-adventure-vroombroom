@@ -10,3 +10,21 @@ historyButton.onclick = function() {
 closeReadText.onclick = function() {
     readText.style.display = "none";
 }
+
+// Start
+var startButton = document.getElementById("start");
+
+startButton.addEventListener("click", transition)
+
+// Remove Start
+startButton.addEventListener("click", () => {
+    startButton.style.display = "none";
+})
+
+// Transition
+
+function transition() {
+    var imageTransition = document.getElementById("image-transition");
+
+    imageTransition.style.opacity = "100%";
+}
