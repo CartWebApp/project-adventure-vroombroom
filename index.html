@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Grass_Block_JE1.webp">
 </head>
 <body>
     <div id="gameCanvas">
@@ -14,6 +15,11 @@
         </div>
         <div id="text">
             <button id="start">Start</button>
+            <div id="dialogue-box">
+                <div id="dialogue"></div>
+                <button id="continue">Continue</button>
+            </div>
+            <div id="option-list"></div>
         </div>
         <div id="status">
             <div id="health">
@@ -53,6 +59,7 @@
         </div>
     </div>
     <audio src="/music/menu.mp3" autoplay loop></audio>
-    <script src="game.js"></script>
+    <script type="module" src="game.js"></script>
+    <script src="text.js"></script>
 </body>
 </html>

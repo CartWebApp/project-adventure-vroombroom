@@ -36,6 +36,7 @@ body {
     position: absolute;
     bottom: 0;
     display: flex;
+    flex-direction: column;
 }
 
 #status {
@@ -121,19 +122,19 @@ body {
 
 #start {
     color: white;
-    background-color: black;
+    background-color: gray;
     border: none;
     padding: 1em;
     align-self: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: fit-content;
     height: fit-content;
     cursor: pointer;
+    z-index: 1;
 }
 
 #start:hover {
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(128, 128, 128, 0.612);
 }
 
 #image-transition {
@@ -143,4 +144,34 @@ body {
     position: absolute;
     opacity: 0%;
     transition: 1s;
+}
+
+#dialogue-box, #option-list {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    color: white;
+}
+
+#dialogue-box {
+    top: 0;
+}
+
+#option-list {
+    bottom: 0;
+}
+
+#continue {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    background-color: gray;
+    padding: 4px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    display: none;
+}
+#continue:hover {
+    background-color: rgba(128, 128, 128, 0.612);
 }
