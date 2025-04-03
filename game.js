@@ -43,7 +43,18 @@ function transitionNot() {
 var dialogue = document.getElementById("dialogue");
 var options = document.getElementById("option-list");
 var continueButton = document.getElementById("continue");
+var currentDialogue = 1;
 
 startButton.addEventListener("click", () => {
     dialogue.innerHTML = partOne[0];
+})
+
+// Continue
+continueButton.addEventListener("click", () => {
+    if (currentDialogue < partOne.length) {
+        dialogue.innerHTML = partOne[currentDialogue];
+        currentDialogue++;
+    } else {
+        dialogue.innerHTML = "Failed to continue."
+    }
 })
