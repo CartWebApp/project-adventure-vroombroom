@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+
+* {
+    user-select: none;
+    font-family: "Homenaje", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -174,4 +183,9 @@ body {
 }
 #continue:hover {
     background-color: rgba(128, 128, 128, 0.612);
+}
+
+#dialogue {
+    margin-top: 8px;
+    padding: 0 10px;
 }

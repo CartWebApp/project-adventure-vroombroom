@@ -1,6 +1,7 @@
 import "./text.js";
 
 // Text history
+
 var historyButton = document.getElementById("history");
 var readText = document.getElementById("read");
 var closeReadText = document.getElementById("read-close");
@@ -14,12 +15,14 @@ closeReadText.onclick = function() {
 }
 
 // Start
+
 var startButton = document.getElementById("start");
 var gameTitle = document.getElementById("title");
 
 startButton.addEventListener("click", transition)
 
 // Remove Start
+
 startButton.addEventListener("click", () => {
     startButton.style.display = "none";
     continueButton.style.display = "block";
@@ -27,6 +30,7 @@ startButton.addEventListener("click", () => {
 })
 
 // Transition
+
 function transition() {
     var imageTransition = document.getElementById("image-transition");
 
@@ -40,24 +44,37 @@ function transitionNot() {
 }
 
 // Text
+
 var dialogue = document.getElementById("dialogue");
 var options = document.getElementById("option-list");
 var continueButton = document.getElementById("continue");
 var currentDialogue = 1;
+var storyProgress = 0;
 var storySoFar = document.getElementById("historical-text");
 
 startButton.addEventListener("click", () => {
-    dialogue.innerHTML = partOne[0];
-    storySoFar.innerHTML = partOne[0];
+    dialogue.innerHTML = dialoguePart[0][0];
+    storySoFar.innerHTML = dialoguePart[0][0];
 })
 
 // Continue
-continueButton.addEventListener("click", () => {
-    if (currentDialogue < partOne.length) {
-        dialogue.innerHTML = partOne[currentDialogue];
-        storySoFar.innerHTML += "<br>" + partOne[currentDialogue];
-        currentDialogue++;
+
+continueButton.addEventListener("click", playDialogue)
+
+// Progression
+
+function playDialogue() {
+    if (currentDialogue < dialoguePart[storyProgress].length) {
+        dialogue.innerHTML = dialoguePart[storyProgress][currentDialogue];
+        storySoFar.innerHTML += "<br/><br/>" + dialoguePart[storyProgress][currentDialogue];
+        currentDialogue += 1;
     } else {
-        dialogue.innerHTML = "Failed to continue."
+        storyProgress += 1;
+        currentDialogue = 0;
+        if (dialoguePart[storyProgress]) {
+            dialogue.innerHTML = dialoguePart[storyProgress][currentDialogue];
+            storySoFar.innerHTML += "<br/><br/>" + dialoguePart[storyProgress][currentDialogue];
+            currentDialogue += 1;
+        }
     }
-})
+}
