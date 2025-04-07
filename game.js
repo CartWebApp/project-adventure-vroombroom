@@ -1,5 +1,3 @@
-import "./text.js";
-
 // Text history
 
 var historyButton = document.getElementById("history");
@@ -12,6 +10,51 @@ historyButton.onclick = function() {
 
 closeReadText.onclick = function() {
     readText.style.display = "none";
+}
+
+// Setting
+
+var settingButton = document.getElementById("setting");
+var settingInteractable = document.getElementById("setting-interactable");
+var closeSetting = document.getElementById("setting-close");
+
+settingButton.onclick = function() {
+    settingInteractable.style.display = "block";
+}
+
+closeSetting.onclick = function() {
+    settingInteractable.style.display = "none";
+}
+
+// Game size
+
+var gameCanvas = document.getElementById("gameCanvas");
+var imageSize = document.getElementById("image");
+var dialogueSize = document.getElementById("text");
+var dialogueBoxSize = document.getElementById("dialogue-box");
+var foursize = document.getElementById("foursize");
+var ninesize = document.getElementById("ninesize");
+
+foursize.onclick = function() {
+    gameCanvas.style.width = "400px";
+    gameCanvas.style.height = "400px";
+    imageSize.style.width = "300px";
+    imageSize.style.height = "200px";
+    dialogueSize.style.width = "300px";
+    dialogueSize.style.height = "200px";
+    dialogueBoxSize.style.width = "300px";
+    dialogueBoxSize.style.height = "100px";
+}
+
+ninesize.onclick = function() {
+    gameCanvas.style.width = "900px";
+    gameCanvas.style.height = "900px";
+    imageSize.style.width = "800px";
+    imageSize.style.height = "450px";
+    dialogueSize.style.width = "800px";
+    dialogueSize.style.height = "450px";
+    dialogueBoxSize.style.width = "800px";
+    dialogueBoxSize.style.height = "225px";
 }
 
 // Start
@@ -77,6 +120,7 @@ function playDialogue() {
     isTyping = true;
 
     if (currentDialogue < dialoguePartText[storyProgress].length) {
+        updateScene();
         typeText(dialogue, dialoguePartText[storyProgress][currentDialogue], 10, () => {
             storySoFar.innerHTML += "<br/><br/>" + dialoguePartText[storyProgress][currentDialogue];
             currentDialogue += 1;
@@ -86,10 +130,10 @@ function playDialogue() {
         storyProgress += 1;
         currentDialogue = 0;
         if (dialoguePartText[storyProgress]) {
+            updateScene();
             typeText(dialogue, dialoguePartText[storyProgress][currentDialogue], 10, () => {
                 storySoFar.innerHTML += "<br/><br/>" + dialoguePartText[storyProgress][currentDialogue];
                 currentDialogue += 1;
-                updateScene();
                 isTyping = false; // Reset flag when finished
             });
         }
@@ -118,14 +162,20 @@ let isTyping = false;
 function changePicture(storyPart, imageName) {
   let thePicture = document.getElementById("image");
   if (dialoguePartPicture[storyPart][imageName]) {
-    thePicture.src = dialoguePartPicture[storyPart][imageName];
+    thePicture.style.backgroundImage = `url(${dialoguePartPicture[storyPart][imageName]})`;
   } else {
     console.log("Scene not found");
   }
 }
 
 function updateScene() {
-    if (dialoguePartText[1][1]) {
-        changePicture(0, 1)
+    if (storyProgress === 0 && currentDialogue === 1) {
+        changePicture(0, 1); // Manually set the image for the second dialogue
+    }
+    else if (storyProgress === 0 && currentDialogue === 3) {
+        changePicture(0, 0); // Manually set the image for the third dialogue
+    }
+    else if (storyProgress === 1 && currentDialogue === 0) {
+        changePicture(1, 2);
     }
 }

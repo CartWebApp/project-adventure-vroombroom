@@ -14,6 +14,7 @@ let partOneText = [
 
 let partOnePicture = [
     "/img/grass.jpg",
+    "/img/house.jpg",
     "/img/staffimg.jpg",
 ]
 
@@ -23,6 +24,12 @@ let partTwoText = [
     "Yes",
     "No",
     "test",
+]
+
+let partTwoPicture = [
+    "/img/grass.jpg",
+    "/img/house.jpg",
+    "/img/staffimg.jpg",
 ]
 
 // Part three
@@ -39,4 +46,4 @@ let partFourText = [
 ]
 
 let dialoguePartText = [partOneText, partTwoText, partThreeText, partFourText]
-let dialoguePartPicture = [partOnePicture]
+let dialoguePartPicture = [partOnePicture, partTwoPicture]
