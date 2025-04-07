@@ -31,6 +31,7 @@ closeSetting.onclick = function() {
 var gameCanvas = document.getElementById("gameCanvas");
 var imageSize = document.getElementById("image");
 var dialogueSize = document.getElementById("text");
+var dialogueTextSize = document.getElementById("dialogue");
 var dialogueBoxSize = document.getElementById("dialogue-box");
 var foursize = document.getElementById("foursize");
 var ninesize = document.getElementById("ninesize");
@@ -42,8 +43,12 @@ foursize.onclick = function() {
     imageSize.style.height = "200px";
     dialogueSize.style.width = "300px";
     dialogueSize.style.height = "200px";
+    dialogueTextSize.style.fontSize = "16px"
     dialogueBoxSize.style.width = "300px";
     dialogueBoxSize.style.height = "100px";
+    continueButton.style.width = "46px";
+    continueButton.style.height = "23px";
+    continueButton.style.fontSize = "14px"
 }
 
 ninesize.onclick = function() {
@@ -53,8 +58,12 @@ ninesize.onclick = function() {
     imageSize.style.height = "450px";
     dialogueSize.style.width = "800px";
     dialogueSize.style.height = "450px";
+    dialogueTextSize.style.fontSize = "30px";
     dialogueBoxSize.style.width = "800px";
     dialogueBoxSize.style.height = "225px";
+    continueButton.style.width = "100px";
+    continueButton.style.height = "50px";
+    continueButton.style.fontSize = "30px"
 }
 
 // Start

@@ -180,6 +180,9 @@ body {
     color: white;
     border: none;
     display: none;
+    width: 46px;
+    height: 23px;
+    font-size: 14px;
 }
 #continue:hover {
     background-color: rgba(128, 128, 128, 0.612);
