@@ -19,31 +19,35 @@
                 <div id="dialogue"></div>
                 <button id="continue">Continue</button>
             </div>
-            <div id="option-list"></div>
+            <div id="option-list">
+                <button id="choiceone" class="choicebutton">Choice One</button>
+                <button id="choicetwo" class="choicebutton">Choice Two</button>
+                <button id="choicethree" class="choicebutton">Choice Three</button>
+            </div>
         </div>
         <div id="status">
             <div id="health">
                 <p>Health</p>
                 <div id="health-bar">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+                    <div class="bar" id="healthbarone"></div>
+                    <div class="bar" id="healthbartwo"></div>
+                    <div class="bar" id="healthbarthree"></div>
                 </div>
             </div>
             <div id="stamina">
                 <p>Stamina</p>
                 <div id="stamina-bar">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+                    <div class="bar" id="staminabarone"></div>
+                    <div class="bar" id="staminabartwo"></div>
+                    <div class="bar" id="staminabarthree"></div>
                 </div>
             </div>
             <div id="detection">
                 <p>Detection</p>
                 <div id="detection-bar">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+                    <div class="bar" id="detectionbarone"></div>
+                    <div class="bar" id="detectionbartwo"></div>
+                    <div class="bar" id="detectionbarthree"></div>
                 </div>
             </div>
             <div class="status-bottom">
@@ -67,12 +71,16 @@
                         <br/>
                         <div id="ninesize">900x900</div>
                     </div>
+                    <div class="setting-class">
+                        <p>Volume</p>
+                        <br/>
+                        <audio id="song" src="/music/menu.mp3" autoplay loop controls></audio>
+                    </div>
                 </div>
             </div>
             <p id="setting-close">Close</p>
         </div>
     </div>
-    <audio src="/music/menu.mp3" autoplay loop></audio>
     <script type="module" src="game.js"></script>
     <script src="text.js"></script>
 </body>
