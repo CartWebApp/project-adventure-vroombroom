@@ -35,6 +35,9 @@ var dialogueTextSize = document.getElementById("dialogue");
 var dialogueBoxSize = document.getElementById("dialogue-box");
 var foursize = document.getElementById("foursize");
 var ninesize = document.getElementById("ninesize");
+var settingOption = document.getElementById("setting-option");
+var allChoiceButton = document.querySelectorAll(".choicebutton");
+var optionList = document.getElementById("option-list");
 
 foursize.onclick = function() {
     gameCanvas.style.width = "400px";
@@ -48,7 +51,13 @@ foursize.onclick = function() {
     dialogueBoxSize.style.height = "100px";
     continueButton.style.width = "46px";
     continueButton.style.height = "23px";
-    continueButton.style.fontSize = "14px"
+    continueButton.style.fontSize = "14px";
+    settingOption.style.width = "300px;"
+    settingOption.style.justifyContent = "unset";
+    allChoiceButton.forEach(btn => {
+        btn.style.width = "fit-content";
+    });
+    optionList.style.width = "300px";
 }
 
 ninesize.onclick = function() {
@@ -63,7 +72,53 @@ ninesize.onclick = function() {
     dialogueBoxSize.style.height = "225px";
     continueButton.style.width = "100px";
     continueButton.style.height = "50px";
-    continueButton.style.fontSize = "30px"
+    continueButton.style.fontSize = "30px";
+    settingOption.style.width = "800px";
+    settingOption.style.justifyContent = "center";
+    allChoiceButton.forEach(btn => {
+        btn.style.width = "200px";
+    });
+    optionList.style.width = "800px";
+}
+
+// Save game
+
+var saveStory = document.getElementById("save");
+var loadStory = document.getElementById("load");
+
+function saveGame() {
+    const gameState = {
+        storyProgress: storyProgress,
+        currentDialogue: currentDialogue,
+        health: healthOne.style.backgroundColor,
+        stamina: staminaOne.style.backgroundColor,
+        detection: detectionOne.style.backgroundColor
+    };
+    localStorage.setItem('gameSave', JSON.stringify(gameState));
+    alert('Game saved!');
+}
+
+function loadGame() {
+    const savedState = JSON.parse(localStorage.getItem('gameSave'));
+    if (savedState) {
+        storyProgress = savedState.storyProgress;
+        currentDialogue = savedState.currentDialogue;
+        healthOne.style.backgroundColor = savedState.health;
+        staminaOne.style.backgroundColor = savedState.stamina;
+        detectionOne.style.backgroundColor = savedState.detection;
+        alert('Game loaded!');
+        playDialogue(); // Resume the dialogue
+    } else {
+        alert('No saved game found.');
+    }
+}
+
+saveStory.onclick = function() {
+    saveGame();
+}
+
+loadStory.onclick = function() {
+    loadGame();
 }
 
 // Start
@@ -130,6 +185,8 @@ function playDialogue() {
 
     if (currentDialogue < dialoguePartText[storyProgress].length) {
         updateScene();
+        // updateSong();
+        updateStatus();
         typeText(dialogue, dialoguePartText[storyProgress][currentDialogue], 10, () => {
             storySoFar.innerHTML += "<br/><br/>" + dialoguePartText[storyProgress][currentDialogue];
             currentDialogue += 1;
@@ -140,6 +197,8 @@ function playDialogue() {
         currentDialogue = 0;
         if (dialoguePartText[storyProgress]) {
             updateScene();
+            // updateSong();
+            updateStatus();
             typeText(dialogue, dialoguePartText[storyProgress][currentDialogue], 10, () => {
                 storySoFar.innerHTML += "<br/><br/>" + dialoguePartText[storyProgress][currentDialogue];
                 currentDialogue += 1;
@@ -172,7 +231,8 @@ function changePicture(storyPart, imageName) {
   let thePicture = document.getElementById("image");
   if (dialoguePartPicture[storyPart][imageName]) {
     thePicture.style.backgroundImage = `url(${dialoguePartPicture[storyPart][imageName]})`;
-  } else {
+  }
+  else {
     console.log("Scene not found");
   }
 }
@@ -186,5 +246,122 @@ function updateScene() {
     }
     else if (storyProgress === 1 && currentDialogue === 0) {
         changePicture(1, 2);
+    }
+}
+
+// Song
+
+function changeSong(chooseSong) {
+    let theSong = document.getElementById("song");
+    if (gameSong[chooseSong]) {
+        theSong.src = `url(${gameSong[chooseSong]})`;
+        // theSong.play();
+    }
+    else {
+        console.log("Song not found");
+    }
+}
+
+/* function updateSong() {
+    if (storyProgress === 0 && currentDialogue === 1) {
+        changeSong(0);
+    }
+} */
+
+// Status
+
+// Health
+
+let healthOne = document.getElementById("healthbarone");
+let healthTwo = document.getElementById("healthbartwo");
+let healthThree = document.getElementById("healthbarthree");
+
+function healthRemainNone() {
+    healthOne.style.backgroundColor = "gray";
+    healthTwo.style.backgroundColor = "gray";
+    healthThree.style.backgroundColor = "gray";
+}
+
+function healthRemainOne() {
+    healthOne.style.backgroundColor = "red";
+    healthTwo.style.backgroundColor = "gray";
+    healthThree.style.backgroundColor = "gray";
+}
+
+function healthRemainTwo() {
+    healthOne.style.backgroundColor = "red";
+    healthTwo.style.backgroundColor = "red";
+    healthThree.style.backgroundColor = "gray";
+}
+
+function healthRemainThree() {
+    healthOne.style.backgroundColor = "red";
+    healthTwo.style.backgroundColor = "red";
+    healthThree.style.backgroundColor = "red";
+}
+
+// Stamina
+
+let staminaOne = document.getElementById("staminabarone");
+let staminaTwo = document.getElementById("staminabartwo");
+let staminaThree = document.getElementById("staminabarthree");
+
+function staminaRemainNone() {
+    staminaOne.style.backgroundColor = "gray";
+    staminaTwo.style.backgroundColor = "gray";
+    staminaThree.style.backgroundColor = "gray";
+}
+
+function staminaRemainOne() {
+    staminaOne.style.backgroundColor = "yellow";
+    staminaTwo.style.backgroundColor = "gray";
+    staminaThree.style.backgroundColor = "gray";
+}
+
+function staminaRemainTwo() {
+    staminaOne.style.backgroundColor = "yellow";
+    staminaTwo.style.backgroundColor = "yellow";
+    staminaThree.style.backgroundColor = "gray";
+}
+
+function staminaRemainThree() {
+    healthOne.style.backgroundColor = "yellow";
+    healthTwo.style.backgroundColor = "yellow";
+    healthThree.style.backgroundColor = "yellow";
+}
+
+// Detection
+
+let detectionOne = document.getElementById("detectionbarone");
+let detectionTwo = document.getElementById("detectionbartwo");
+let detectionThree = document.getElementById("detectionbarthree");
+
+function detectionRemainNone() {
+    detectionOne.style.backgroundColor = "gray";
+    detectionTwo.style.backgroundColor = "gray";
+    detectionThree.style.backgroundColor = "gray";
+}
+
+function detectionRemainOne() {
+    detectionOne.style.backgroundColor = "blue";
+    detectionTwo.style.backgroundColor = "gray";
+    detectionThree.style.backgroundColor = "gray";
+}
+
+function detectionRemainTwo() {
+    detectionOne.style.backgroundColor = "blue";
+    detectionTwo.style.backgroundColor = "blue";
+    detectionThree.style.backgroundColor = "gray";
+}
+
+function detectionRemainThree() {
+    detectionOne.style.backgroundColor = "blue";
+    detectionTwo.style.backgroundColor = "blue";
+    detectionThree.style.backgroundColor = "blue";
+}
+
+function updateStatus() {
+    if (storyProgress === 0 && currentDialogue === 2) {
+        healthRemainThree();
     }
 }

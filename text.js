@@ -199,3 +199,7 @@ let partFourText = [
 
 let dialoguePartText = [partOneText, partTwoText, partThreeText, partFourText]
 let dialoguePartPicture = [partOnePicture, partTwoPicture]
+
+let gameSong = [
+    
+]

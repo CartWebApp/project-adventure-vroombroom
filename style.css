@@ -168,6 +168,14 @@ body {
 
 #option-list {
     bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#option-list button {
+    height: 60px;
+    /* display: none; */
 }
 
 #continue {
@@ -231,7 +239,8 @@ body {
     width: 300px;
     height: 100%;
     position: absolute;
-    overflow-y: auto;
+    display: flex;
+    align-items: flex-start;
 }
 
 #setting-choose {
@@ -245,6 +254,7 @@ body {
 .setting-class {
     background-color: darkgreen;
     padding: 4px;
+    margin-top: 10px;
 }
 
 #foursize, #ninesize {
