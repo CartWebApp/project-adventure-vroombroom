@@ -53,6 +53,7 @@ foursize.onclick = function() {
     continueButton.style.height = "23px";
     continueButton.style.fontSize = "14px";
     settingOption.style.width = "300px;"
+    settingOption.style.justifyContent = "unset";
     allChoiceButton.forEach(btn => {
         btn.style.width = "fit-content";
     });
@@ -73,10 +74,51 @@ ninesize.onclick = function() {
     continueButton.style.height = "50px";
     continueButton.style.fontSize = "30px";
     settingOption.style.width = "800px";
+    settingOption.style.justifyContent = "center";
     allChoiceButton.forEach(btn => {
         btn.style.width = "200px";
     });
     optionList.style.width = "800px";
+}
+
+// Save game
+
+var saveStory = document.getElementById("save");
+var loadStory = document.getElementById("load");
+
+function saveGame() {
+    const gameState = {
+        storyProgress: storyProgress,
+        currentDialogue: currentDialogue,
+        health: healthOne.style.backgroundColor,
+        stamina: staminaOne.style.backgroundColor,
+        detection: detectionOne.style.backgroundColor
+    };
+    localStorage.setItem('gameSave', JSON.stringify(gameState));
+    alert('Game saved!');
+}
+
+function loadGame() {
+    const savedState = JSON.parse(localStorage.getItem('gameSave'));
+    if (savedState) {
+        storyProgress = savedState.storyProgress;
+        currentDialogue = savedState.currentDialogue;
+        healthOne.style.backgroundColor = savedState.health;
+        staminaOne.style.backgroundColor = savedState.stamina;
+        detectionOne.style.backgroundColor = savedState.detection;
+        alert('Game loaded!');
+        playDialogue(); // Resume the dialogue
+    } else {
+        alert('No saved game found.');
+    }
+}
+
+saveStory.onclick = function() {
+    saveGame();
+}
+
+loadStory.onclick = function() {
+    loadGame();
 }
 
 // Start
