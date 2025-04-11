@@ -54,10 +54,10 @@ foursize.onclick = function() {
     continueButton.style.fontSize = "14px";
     settingOption.style.width = "300px;"
     settingOption.style.justifyContent = "unset";
+    optionList.style.width = "300px";
     allChoiceButton.forEach(btn => {
         btn.style.width = "fit-content";
     });
-    optionList.style.width = "300px";
 }
 
 ninesize.onclick = function() {
@@ -75,27 +75,29 @@ ninesize.onclick = function() {
     continueButton.style.fontSize = "30px";
     settingOption.style.width = "800px";
     settingOption.style.justifyContent = "center";
+    optionList.style.width = "800px";
     allChoiceButton.forEach(btn => {
         btn.style.width = "200px";
     });
-    optionList.style.width = "800px";
 }
 
 // Save game
 
-var saveStory = document.getElementById("save");
-var loadStory = document.getElementById("load");
+var saveStory = document.getElementById("savebutton");
+var loadStory = document.getElementById("loadbutton");
 
 function saveGame() {
     const gameState = {
         storyProgress: storyProgress,
-        currentDialogue: currentDialogue,
-        health: healthOne.style.backgroundColor,
+        currentDialogue: currentDialogue - 1,
+        oneHealth: healthOne.style.backgroundColor,
+        twoHealth: healthTwo.style.backgroundColor,
+        threeHealth: healthThree.style.backgroundColor,
         stamina: staminaOne.style.backgroundColor,
-        detection: detectionOne.style.backgroundColor
+        detection: detectionOne.style.backgroundColor,
+        history: storySoFar.innerHTML
     };
     localStorage.setItem('gameSave', JSON.stringify(gameState));
-    alert('Game saved!');
 }
 
 function loadGame() {
@@ -103,14 +105,17 @@ function loadGame() {
     if (savedState) {
         storyProgress = savedState.storyProgress;
         currentDialogue = savedState.currentDialogue;
-        healthOne.style.backgroundColor = savedState.health;
+        healthOne.style.backgroundColor = savedState.oneHealth;
+        healthTwo.style.backgroundColor = savedState.twoHealth;
+        healthThree.style.backgroundColor = savedState.threeHealth;
         staminaOne.style.backgroundColor = savedState.stamina;
         detectionOne.style.backgroundColor = savedState.detection;
-        alert('Game loaded!');
+        storySoFar.innerHTML = savedState.history;
         playDialogue(); // Resume the dialogue
-    } else {
-        alert('No saved game found.');
     }
+    gameTitle.style.display = "none";
+    startButton.style.display = "none";
+    continueButton.style.display = "block";
 }
 
 saveStory.onclick = function() {
@@ -180,13 +185,14 @@ continueButton.addEventListener("click", playDialogue)
 // Progression
 
 function playDialogue() {
-    if (isTyping) return; // Prevent overlapping calls
+    if (isTyping) return; // Prevent overlapping
     isTyping = true;
 
     if (currentDialogue < dialoguePartText[storyProgress].length) {
         updateScene();
         // updateSong();
         updateStatus();
+        buttonChoice();
         typeText(dialogue, dialoguePartText[storyProgress][currentDialogue], 10, () => {
             storySoFar.innerHTML += "<br/><br/>" + dialoguePartText[storyProgress][currentDialogue];
             currentDialogue += 1;
@@ -199,6 +205,7 @@ function playDialogue() {
             updateScene();
             // updateSong();
             updateStatus();
+            buttonChoice();
             typeText(dialogue, dialoguePartText[storyProgress][currentDialogue], 10, () => {
                 storySoFar.innerHTML += "<br/><br/>" + dialoguePartText[storyProgress][currentDialogue];
                 currentDialogue += 1;
@@ -267,6 +274,31 @@ function changeSong(chooseSong) {
         changeSong(0);
     }
 } */
+
+// Button Choice
+
+var choiceOne = document.getElementById("choiceone");
+var choiceTwo = document.getElementById("choicetwo");
+var choiceThree = document.getElementById("choicethree");
+
+function buttonChoice() {
+    if (storyProgress === 0 && currentDialogue === 25) {
+        continueButton.style.display = "none";
+        choiceOne.style.display = "block";
+        choiceTwo.style.display = "block";
+        choiceOne.innerHTML = PartTwoBranchOne[0];
+        choiceTwo.innerHTML = PartTwoBranchOne[1];
+        choiceOne.onclick = function() {
+            
+        }
+    }
+    else {
+        choiceOne.style.display = "none";
+        choiceTwo.style.display = "none";
+        choiceThree.style.display = "none";
+        continueButton.style.display = "block";
+    }
+}
 
 // Status
 

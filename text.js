@@ -38,9 +38,14 @@ let partOnePicture = [
 
 // Part two
 
-let partTwoText = [
+// Branch
+
+let PartTwoBranchOne = [
     "Run",
-    "Stay and Fight" ,
+    "Stay/Fight",
+]
+
+let partTwoText = [
     "Laying your father gently, you stand making your way to the back exit of what was once your home." , 
     "Swinging it open you run, you run till you can’t hear the horn anymore, the sounds of pain that had been echoing throughout the village." ,
     "You end up in the forest, massive trees surround you, their leaves blocking the incoming sunlight." ,
