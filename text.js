@@ -212,9 +212,10 @@ let partThreeText = [
     "A blur of black fur lunges from the underbush, The man is knocked off his horse, The horse screams fill the air as its dragged sidesways into the trees. Swallowing hard you look around the group, the others were already on gaurd weapons drawed they were just waiting for the next attack.",
     "A low growl escapes through the trees. It's as if it was all around them, The way it echoed thoughout the woods. Before they could react the beast attacks again. Rushes through brush slamming into the side of your horse along with you, Pinning you against a tree.",
     "What the-! You scream",
-    "The horse falls to the ground as the beast slams you again into the tree. Causing it t ocrack with each hit. Its bares its teeth, It rears its head back as it snaps at you its mouth nearing clamping down on your head.",
-    "A whistle ",
-    "",
+    "The horse falls to the ground as the beast slams you again into the tree. Causing it to crack with each hit. Its bares its teeth, It rears its head back as it snaps at you its mouth nearing clamping down on your head.",
+    "A deep crack echos in the area. The beast jerks as an arrow burries deep at its flank. The beast turns. Snarling at the group, its lips curled back reavling yellowed fangs. A massive beast its black fur dangles in long matted clumps.",
+    "You fall to the ground. The horse whinnies in pain as it tries to get back on its feet. Scrambling to your feet you grab the staff from your back ready for battle.",
+    //battle here or create a battle scene 
     "",
     "",
     "",
