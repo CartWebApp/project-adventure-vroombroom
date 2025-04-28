@@ -30,6 +30,9 @@ let partOneText = [
 
 ]
 
+partOneChoiceOne = [Run away, Stay and fight
+]
+
 let partOnePicture = [
     "/img/grass.jpg",
     "/img/house.jpg",
@@ -216,9 +219,9 @@ let partThreeText = [
     "A deep crack echos in the area. The beast jerks as an arrow burries deep at its flank. The beast turns. Snarling at the group, its lips curled back reavling yellowed fangs. A massive beast its black fur dangles in long matted clumps.",
     "You fall to the ground. The horse whinnies in pain as it tries to get back on its feet. Scrambling to your feet you grab the staff from your back ready for battle.",
     //battle here or create a battle scene 
-    "",
-    "",
-    "",
+    "Heaving hard breaths, you fall to the ground. There the beast lies dead and deafeated. The others were around wounded but breathing. Sitting up you glance around the area. The trees were broken, the ground lifted and torn. The smell of blood was punjet.",
+    "Bob was standing over the beast, his weapon in hand. using his weapon he pokes at the beast. questioning if it was really dead. After a several minutes of poking and prodding he finally steps away from the corspe of the beast. ",
+    "Is eveyone alright? Bobs voice rang out. ",
     "",
     "",
     "",
