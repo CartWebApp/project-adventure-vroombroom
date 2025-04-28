@@ -286,10 +286,12 @@ function buttonChoice() {
         continueButton.style.display = "none";
         choiceOne.style.display = "block";
         choiceTwo.style.display = "block";
-        choiceOne.innerHTML = PartTwoBranchOne[0];
-        choiceTwo.innerHTML = PartTwoBranchOne[1];
+        choiceOne.innerHTML = partOneChoiceOne[0];
+        choiceTwo.innerHTML = partOneChoiceOne[1];
         choiceOne.onclick = function() {
-            
+            storyProgress = 1;
+            currentDialogue = 0;
+            playDialogue();
         }
     }
     else {
