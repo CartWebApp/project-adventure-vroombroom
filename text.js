@@ -30,7 +30,9 @@ let partOneText = [
 
 ]
 
-partOneChoiceOne = [Run away, Stay and fight
+partOneChoiceOne = [
+    "Run away",
+    "Stay and fight"
 ]
 
 let partOnePicture = [
