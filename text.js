@@ -38,12 +38,12 @@ let partOnePicture = [
 
 
 partwoChoiceOne = [
-    "Follow"
+    "Follow",
     "Decline"
 ]
 
 parthreeChoiceone = [
-    "Go"
+    "Go",
     "Stay"
 ]
 
