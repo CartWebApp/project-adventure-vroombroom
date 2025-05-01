@@ -248,7 +248,7 @@ let partThreeText = [
     "Isn't that welcoming Bob said, his voice low and gravelly. The dungeon was a dark gash in the earth, a wound that had never healed. It was a place of nightmares, a place where the light of day dared not tread.",
     "I don't think more than 3 can fit in there at one, Bob said, looking at the group. We will have to go in as sets of three. Be on guard and be careful. We don't know what is in there.",
     "The men nooded, they scattered around gathering all the supplies they needed for the adventure ahead. You stood by your horse, anxiously waiting for the others to finish. The staff slighty pulsed against your back. the runes glimmering softly. ",
-    "You went near the entrance, the air wash so thick and heavy. even from the outside ",
+    "You went near the entrance, even from the outside the air was thick and heavy—Dark and avoid of life. Walking into the darkness you felt the air shift, a low rumble echoed though the stone each footstep you took into the cave. Looking behind the stone began to shift and move, The entrance slamming shut behind you. The moutains mouth was shut finally silencing its eternal, frozen scream.  ",
     "",
     "",
     "",
