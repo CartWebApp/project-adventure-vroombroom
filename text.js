@@ -1,34 +1,57 @@
 // Part one
 
 let partOneText = [
-    "The morning sun had risen over the hills by the time you had finished practicing the forms with your brother's staff.",
-    "It had been a year since he was dragged off to war without even a shoe to his name.",
-    "You still think of it as his, holding the staff up to the light.",
-    "Watching the runes inscribed on the wood shine. The runes did not shine like this towards him.",
-    "He was right to hide this weapon.",
-    "The way it was forged made it look as if it belonged to a legendary hero.",
-    "A horn blares in the distance, the alarm ringing out overhead, jolting you out of your stupor.",
-    "The thunderous sound of dozens of horses galloping in the distance envelops the air, shaking the ground.",
-    "Over the hill, knights - foreign knights - race across the hillside, gunning towards the village, the village you call home.",
-    "The defenders were too late, as a few of the knights had made it inside before the others were shut out.",
-    " The clashing sounds of metal only grew louder as the gate opened, and the remaining knights flooded in, massacring the last remains of what had protected the village and its occupants.",
-    "Running down the hill, you feel the earth beneath you tremble with each frantic step.",
-    "A rock juts from the ground, your foot catches it, making your world tilt as you tumble down the rest of the way.",
-    "Rising to your feet, you ignore the aching pain as you sprint through the scattered bodies. Panting, you reach your home, throwing open the door. The door slams open as you stagger into your family home. ",
-    "“Mom? Dad?” you yell out, only for your voice to be swallowed by the silence",
-    "A low moan reverberated throughout the home.",
-    "“Son..” a voice calls out weakly",
-    "You make  your way through the once-perfect home. Destroyed walls, broken floors and marks cover the entire path as you walk. Each step you could hear the slow ragged breathing, entering the family room you see a body.",
-    "Your father lies on the floor, Bloody and battered. his ragged breaths come slowly, each one harder than the last.",
-    "“Son..” His voice hoarse, Turning his head slowly to you",
-    "“D-dad..!” You lift his head, holding it close to you, fearing letting go would bring his demise.",
-    "“You.. have to—” He coughs, blood spilling onto his chest.",
-    "“You have to run.. Please, escape.” ",
-    "Tears escape your eyes, blurring your vision as you clutch on to your fathers broken form. ",
-    "“N-no dad.. I can’t leave you” your voice cracks, panic rising throughout your body",
-    "Suddenly you hear footsteps, the reality of what is happening hits you. You need to make a choice",
+    "you wake up in a cold hallway, dark and quiet. Theres a good in front do you open? ",
+// Open or walk down hallway
+
+// walking down the hallway
+"Walking down the hallway it leads to a dead end",
+
+
+// open door
+"Opening the door you step inside, Its an old foyer, the walls are cracked and peeling. looking around you see a door to your left and right and center. ",
+"To your left you see a door, its old and rusty. To your right you see a door, its new and shiny. In the center you see a door, its made of wood and looks like it hasn't been opened in years. ",
+
+// Choose left, right or center
+
+// center
+"Opening the center door you end up back in the same foyer, the same crackked walls and peeling paint. Turning back the door is now a wall. Choose again.",
+ // Choose left, right or center
+
+// left
+"Opening the left door step inside, closing the door behined you. The room is dark then groaning can be heard deeper in the room, a zombie stumbles out of the shadows. what do you do?",
+// Punch or run
+
+// punch
+"The zombie grabs you arm and munches on you. You dead",
+
+// run
+"You run away from the zombie, busting through the door where you came closing it behind you. ending back in the foyer. the zombie can be heard banging on the door. ",
+
+// idle for too long
+"The zombie busts through the door, grabbing you and munching on you. You dead",
+
+// right
+"Opening the right door you step inside, Its a old kitchen, the walls are cracked and peeling. looking around you a knife on the counter and see doors to your left and right. Which do you choose?",
+
+// Choose left or right
+
+//Right
+"Right doesn't bugnge there seems to be something bloackling it from behind.",
+
+//left 
+"The door is locked, maybe theres something in the kitchen to help you unlock it. ",
+
+// grabs knife and opens left door
+
+"Pushing the knife into the side of the door and shimmering it, the door pops open. Stepping inside its another hallway, the lights flicker above you.",
+
+
 
 ]
+
+ 
+
 
 partOneChoiceOne = [
     "Run away",
