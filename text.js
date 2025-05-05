@@ -1,34 +1,57 @@
 // Part one
 
 let partOneText = [
-    "The morning sun had risen over the hills by the time you had finished practicing the forms with your brother's staff.",
-    "It had been a year since he was dragged off to war without even a shoe to his name.",
-    "You still think of it as his, holding the staff up to the light.",
-    "Watching the runes inscribed on the wood shine. The runes did not shine like this towards him.",
-    "He was right to hide this weapon.",
-    "The way it was forged made it look as if it belonged to a legendary hero.",
-    "A horn blares in the distance, the alarm ringing out overhead, jolting you out of your stupor.",
-    "The thunderous sound of dozens of horses galloping in the distance envelops the air, shaking the ground.",
-    "Over the hill, knights - foreign knights - race across the hillside, gunning towards the village, the village you call home.",
-    "The defenders were too late, as a few of the knights had made it inside before the others were shut out.",
-    " The clashing sounds of metal only grew louder as the gate opened, and the remaining knights flooded in, massacring the last remains of what had protected the village and its occupants.",
-    "Running down the hill, you feel the earth beneath you tremble with each frantic step.",
-    "A rock juts from the ground, your foot catches it, making your world tilt as you tumble down the rest of the way.",
-    "Rising to your feet, you ignore the aching pain as you sprint through the scattered bodies. Panting, you reach your home, throwing open the door. The door slams open as you stagger into your family home. ",
-    "“Mom? Dad?” you yell out, only for your voice to be swallowed by the silence",
-    "A low moan reverberated throughout the home.",
-    "“Son..” a voice calls out weakly",
-    "You make  your way through the once-perfect home. Destroyed walls, broken floors and marks cover the entire path as you walk. Each step you could hear the slow ragged breathing, entering the family room you see a body.",
-    "Your father lies on the floor, Bloody and battered. his ragged breaths come slowly, each one harder than the last.",
-    "“Son..” His voice hoarse, Turning his head slowly to you",
-    "“D-dad..!” You lift his head, holding it close to you, fearing letting go would bring his demise.",
-    "“You.. have to—” He coughs, blood spilling onto his chest.",
-    "“You have to run.. Please, escape.” ",
-    "Tears escape your eyes, blurring your vision as you clutch on to your fathers broken form. ",
-    "“N-no dad.. I can’t leave you” your voice cracks, panic rising throughout your body",
-    "Suddenly you hear footsteps, the reality of what is happening hits you. You need to make a choice",
+    "you wake up in a cold hallway, dark and quiet. Theres a good in front do you open? ",
+// Open or walk down hallway
+
+// walking down the hallway
+"Walking down the hallway it leads to a dead end",
+
+
+// open door
+"Opening the door you step inside, Its an old foyer, the walls are cracked and peeling. looking around you see a door to your left and right and center. ",
+"To your left you see a door, its old and rusty. To your right you see a door, its new and shiny. In the center you see a door, its made of wood and looks like it hasn't been opened in years. ",
+
+// Choose left, right or center
+
+// center
+"Opening the center door you end up back in the same foyer, the same crackked walls and peeling paint. Turning back the door is now a wall. Choose again.",
+ // Choose left, right or center
+
+// left
+"Opening the left door step inside, closing the door behined you. The room is dark then groaning can be heard deeper in the room, a zombie stumbles out of the shadows. what do you do?",
+// Punch or run
+
+// punch
+"The zombie grabs you arm and munches on you. You dead",
+
+// run
+"You run away from the zombie, busting through the door where you came closing it behind you. ending back in the foyer. the zombie can be heard banging on the door. ",
+
+// idle for too long
+"The zombie busts through the door, grabbing you and munching on you. You dead",
+
+// right
+"Opening the right door you step inside, Its a old kitchen, the walls are cracked and peeling. looking around you a knife on the counter and see doors to your left and right. Which do you choose?",
+
+// Choose left or right
+
+//Right
+"Right doesn't bugnge there seems to be something bloackling it from behind.",
+
+//left 
+"The door is locked, maybe theres something in the kitchen to help you unlock it. ",
+
+// grabs knife and opens left door
+
+"Pushing the knife into the side of the door and shimmering it, the door pops open. Stepping inside its another hallway, the lights flicker above you.",
+
+
 
 ]
+
+ 
+
 
 partOneChoiceOne = [
     "Run away",
@@ -231,7 +254,33 @@ let partThreeText = [
     "Turning your head, you look at the staff against the tree, the runes glimmering in the moonlight. You pull the staff closer, the old wood scraping against the bark of the tree. Looking over the weapon, the runes begin to glow softly before they glow brighter. The light illuminates the area around you, capturing you within the light.", 
     "Warmth embraces your body, the ache in your ribs fading away. The staff hums softly, its vibrations pulsing through your bones. A wave of relief overcomes you, you feel great.",
     "The light dies down, the runes returning to their orginal state. The staff sit in your hands, the weight of it feeling lighter. Your hand hovers over your ribs. shaking slightly you touch the area where the beast had slammed into you. The pain was gone, the bruises were gone. The staff healed you..? ",
-    "Standing up, you look towards the camp wondering if that light show had been seen by the others. Pushing off the tree you make your way over to the group huddled around the fire. The flames of the fire flicker. Looks whos back Bob says, a smile on his face. You sit down next to him, the warmth of the fire washing over you.",
+    "Standing up, you look towards the camp wondering if that light show had been seen by the others. Pushing off the tree you make your way over to the your tent that was set up. Today was rough, and you needed to rest.",
+    "The cirping of birds filled the air as the suns rays filltered through the trent you slept in. The warmth was nice, but the light was blinding sitting up and strenching you crawl out of the tent, seeing the others packing up again.",
+    "There you are, bob said, walking over to you. I was wondering when you would wake up.",
+    "Right, sorry. You say rubbing the drowsiness from your eyes. He gestures for you to follow, come on. We need to get moving.",
+    "AS you follow, you turn back and see your tent being pack up as another memeber walks ups to you handing your staff back to you. You take it, the runes glimmer softly in your hands. Strapping it to your back to continure to follow Bob to where the horses are being saddled up. Getting up on the one you rode before you grab the reins and lead it over to Bob.",
+    "I never asked, YOu look at him curiously. Does this horse have a name?",
+    "Bob chuckles slightly, No. We never got around to naming that horse your on at the moment. You wanna give it a name?",
+    "Sure, why not. You say, thinking for a moment. How about... Roach?",
+    "Roach? Bob raises an eyebrow. Of all the names Roach?",
+    "Yep. you nod your head in agreement. Roach it is.",
+    "Alright then. By he time you have finished talking the camp was all packed up and ready to go. The horses were saddled up and the carriages were ready to go. Bob gives the signal to move out, and the group begins to ride. The sound of hooves pounding against the ground fills the air as you all make your way through the plains.",
+    "The sun rose to its highest point, The rays shining down at full force. The heat was building but you and the group weren't tthat far from the dungeon. Bob turned back to the group, his voice ringing out over the sound of hooves.",
+    "WE'RE ALMOST THERE! He shouted, his voice echoing through the air. The group cheered, the sound of excitement filling the air. An hour had passed and the group was finally nearing the dungeon.",
+    "The wind rolled across the vast expanse of the plains, the tall grass bending in rippling waves. At the foot of the distant mountains, a dark cleft broke through the very bones of the stone. Its jagged edges were weathered and split, as if the earth’s face had been frozen in a silent scream—agony etched deep into the rock.",
+    "Isn't that welcoming Bob said, his voice low and gravelly. The dungeon was a dark gash in the earth, a wound that had never healed. It was a place of nightmares, a place where the light of day dared not tread.",
+    "I don't think more than 3 can fit in there at one, Bob said, looking at the group. We will have to go in as sets of three. Be on guard and be careful. We don't know what is in there.",
+    "The men nooded, they scattered around gathering all the supplies they needed for the adventure ahead. You stood by your horse, anxiously waiting for the others to finish. The staff slighty pulsed against your back. the runes glimmering softly. ",
+    "You went near the entrance, even from the outside the air was thick and heavy—Dark and avoid of life. Walking into the darkness you felt the air shift, a low rumble echoed though the stone each footstep you took into the cave. Looking behind the stone began to shift and move, The entrance slamming shut behind you. The moutains mouth was shut finally silencing its eternal, frozen scream.  ",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
     "",
     "",
     "",
