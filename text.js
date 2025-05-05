@@ -37,18 +37,100 @@ let partOneText = [
 // Choose left or right
 
 //Right
-"Right doesn't bugnge there seems to be something bloackling it from behind.",
+"The door doesn't budge it seems there is something blocking it from behind.",
 
 //left 
 "The door is locked, maybe theres something in the kitchen to help you unlock it. ",
 
-// grabs knife and opens left door
+// grabs knife and uses it to open left door
 
 "Pushing the knife into the side of the door and shimmering it, the door pops open. Stepping inside its another hallway, the lights flicker above you.",
 
+"Theres a door at the end of the hallway, before you can open it a man busts through the door, he seems to be wearing military gear. He looks at you and says, “What are you doing here? You need to leave now!”",
+"Before you can respond he grabs you by your shirt collar dragging you with him back to the kitchen, slamming the door shut behind both of you. Before you can speak he starts barricading the door with whatever he can find.",
+"“What are you doing?” you ask, confused. “We need to get out of here!” “There these.. things! roaming around!”", 
 
+"The man grabs you by the shoulders, shaking you slightly. “Calm down! just be calm ill help you. we need to get to the roof evac will be here in 5 hours”",
+"“5 hours?!” you shout, “Putting that aside. WHERE THE HELL ARE WE?” The man looks at you. “We are in a hosptital, there has been this infection going around that has been making people go crazy. The cause of it is currently unknown, but right now that doesn't matter”",
+
+"The man grabs something from his backpack, its a machete, he hands it to you. “Here take this, it might be useful you could probaly use it to open a door or protect yourself. If you encounter another one of those things make sure to keep your distance when you are about to strike, you do not what them grabbing you. I will take my lead and clear as much as i can infront of you”",
+"The man then ran off down the hallway, you hear him yell “Stay close to me!” A bang can be heared with a thump following it.",
+
+"Theres a door in front and to the right of you Which do you choose?",
+
+// Right
+"The door that is blocked off. Its the same one as before",
+
+// Front 
+"Walking down the hallway you see the door that held the thing now open, It seems the man went this way. Trying the other doors prove futile as they are now locked",
+
+"Walking through the open door the lifeless corspe can be seen on the floor cautiously moving around the body you make it to a big open area, hospital beds and chairs are scattered around the room. The lights are flickering above you, the sound of a generator can be heard in the distance. You see a sign showing the ways you can go",
+
+// Left
+"There is a exit sign indicating the way to the emergerceny it, but its blocked off by a pile of debris expectally. ",
+
+// Right
+"There is a sign indicating the way to the cafeteria, Trying to open the door proves futile as it is locked. ",
+
+// Center
+"Moving forward, you see a sign indicating the way to the stairs. The lights above you are flickering . You hear a loud bang coming from the stairs, it sounds like a gunshot. it must be the man that has been helping you. You run towards the stairs, but before you can reach them a zombie jumps out from behind a corner. You have one choice, fight it.", 
+"Rearing back, you make distance between you and the zombie. You swing the machete at the zombie, killing it you breathe a sound of relief as you make your way up the stairwell carefully. You run up reach flight of stairs unforunatly the stair way was block by a barrier of hospital beds leading to the roof The door way leading into the fourth floor is open",
+"As you enter the floor you are met with a dark hallway, The lights is this area seemed to have gave out. You can hear the sound of a generator Coming from your left. theres a door to your right and Which do you choose?",
+
+// right
+"The door is locked, maybe you can find something to open it with. ",
+
+// right using the machete
+"The door opens, you step inside. The room is dark and quiet. Looking you see its a storage closet for medical supplies. Although the room is dark you can see a few things. There is a first aid kit, a few boxes of bandages, and a few boxes of medical supplies. You take the first aid kit and a few boxes of bandages. You also see a box of ammo for a gun. You take the ammo and put it in your pocket.",
+
+// left 
+"The generator is making a loud noise, you walk towards it. The generator is old and rusty, but it seems to be working. You see a few wires hanging out of the generator. You can try to fix it .",
+
+// fix it
+"Staring at the wire you look to see where they are needed. Plugging the wires into the generator, After a second the lights flicker back on. Exiting the room you can now see where to go.",
+
+"Their is a secondary stairwell leading up to the roof and a door leading to the right. Which do you choose?",
+
+// right
+"The door is locked, maybe you can find something to open it with. ",
+
+// right using the machete
+"The door doesn't budge, looks like you need to find a key to open it. ",
+
+// left
+"Looking closer at the door, you see the name director etch  on the door. You try to open it but it is locked. You can see a keycard reader next to the door. You need to find a keycard to open it.",
+
+// Keycard is in the generator room
+"The generator is making a loud noise, in the roo  you see a body with it a keeycard is on the chest of the body.",
+"Grabbing it you got the keycard. You can now open the door.", 
+
+"Their is a secondary stairwell leading up to the roof and a door leading to the directors office. Which do you choose?",
+
+// Using the keycard on the directors office door
+"The kepad beeps, as the door locks release and it opens. You step inside. The room is quiet Going through the cupbords you find the key needed for the door leading to the roof",
+"Their is a secondary stairwell leading up to the roof and a door leading to the right. Which do you choose?",
+
+// right using key
+"Using the key the door opens and yous step inside of the stairwell. You make your final steps up the stairs to the roof. As you reach the top you see the man is there waiting for you. He looks at you and says, “I thought you were dead!” You look at him and say, “I thought you were dead too!” He laughs and says, “Well we made it to the roof. Now we just need to wait for the evac.”",
+"How long? you ask. He looks at you and says, “30 minutes. he replys Suddenly groans can be heared coming from the stairs. A horde of zombies emerge”",
+"“What do we do?” you ask. He looks at you and says, “We need to hold them off until the evac gets here.” You look around and see a few crates and a few barrels. You can use them to barricade the door.",
+
+// If you give the man the extra ammo
+"Wait! here You throw the box of ammo to the man, he grabs it and puts it in his pocket. “Thanks! I needed this.” He says. You look at him and say, “No problem.” He looks at you and says, “We need to hold them off until the evac gets here.” GRabbing the barrels and other things you began to barricade the door as he covers you so you dont grabbed.",
+"You succesfully barricade the door, finally the helicopter arrives landing as the man gets on you run to the pad and he helps you up. The helicopter takes off and you look down at the hospital. You see the zombies trying to get to you, but they are too late. You made it out alive. THE END",
+
+
+// If you didn't give ot grabbed the ammo
+"Grabbing the barrels and other things you began to barricade the door as he covers you so you dont grabbed. Suddenly a click was heread as the man ran out of ammo. before you can react a zombie grabs your arm and munches on it but you punch its head pusing it behind the door.",
+"Hey! you shout I.. was bit! The man is shocked and looks at you. “What do we do?” he asks. You look at him and then then the hellecopter lands but the zombies break through the barricade. You shout LEAVE ME IM A LOST CAUSE ILL HOLD THEM BACK YOU GET ON THE CHOPPER. Grabbing the machtete from you back you rush the incoming hord",
+"The man gets on the chopper leaving you, but it was worth it. You hold them off as long as you can, but eventually they get to you. You are dead. THE END",
 
 ]
+
+
+
+
+
 
  
 
@@ -79,63 +161,7 @@ parthreeChoiceone = [
 // Part two
 
 let partTwoText = [
-    "Laying your father gently, you stand making your way to the back exit of what was once your home.",
-    "Swinging it open you run, you run till you can’t hear the horn anymore, the sounds of pain that had been echoing throughout the village.",
-    "You end up in the forest, massive trees surround you, their leaves blocking the incoming sunlight.",
-    " Looking around you see nothing but darkness, the soft sounds of nature echo through the area. ",
-    "Taking a deep breath, you calm yourself down. Firstly you need to plan, make a shelter, find food and or help.",
-    "The cool, damp air that slatured through the forest had been heavy and moist.",
-    "The calm sounds of nature had been interrupted, the sounds of hooves override the sounds of nature. They were making their way towards you.",
-    "Hearing the intense, rumbling of the incoming knights you decide to run.",
-    "Sprinting across the dirt path you make your way through the forest as the thumping got louder and only closer, on your way you spotted a horse alone and all saddled up you thought that was odd but you needed a way to escape.",
-    "Without a second thought as soon as the horse was in grabbing distance you hopped onto the horse.",
-    "Grabbing the reins you prepare to take off to get away from the enemy and be able to live.",
-    "A shiver rang through your body as you felt the cold metal of a blade rest against the back of your neck.",
-    "“Alright, I don't even wanna know just get off and don’t reach for that stick on your back,”  an unknown male voice said.",
-    "Another blade appeared in front of you, the tip of it poking at your throat.",
-    " Swallowing deeply you let go of the reins and put your hands up in surrender.",
-    "WIth that you slowly made your way off the horse as your feet hit the ground.",
-    " You are grabbed and restrained, one of the men grabs the staff off your back and throws it to your left.",
-    "“Hey..! what are you doing!?” you barked at them",
-    "“What does it look like? I'm tying you up?” ",
-    "With one last tug he was done as he rose up from his knee, admiring his finished work ",
-    "“L-listen, the Aiel they're here!” You shouted, wiggling your wrist trying to break free from the restraints that had united both of your hands. ",
-    "The man’s eyes widened, then he snorted “You expect me to believe. That they’re here?” ",
-    "You glared at him, infuriated he took your warning as a joke, Before you could retort an arrow whizzed by barely missing the man's head.",
-    "Before the man can react a volley of a dozen arrows shot through the brush",
-    "As the arrows flew one struck him in the shoulder, quickly he pulled the shield from his back and put it in front of him catching two more arrows.",
-    "“AMBUSH” The man shouted,",
-    "Without a second thought you began to roll, turning on your side you rolled away from the incoming battle hiding behind some trees and shrubs.",
-    "The loud clashes of metal disrupted the serene sounds that had once engulfed this area.",
-    "You struggled trying to remove the restraints, holding out your hands you grind the rope against a branch.",
-    "With one final tug you break through the rope freeing your hands. As soon as you did that an axe came swinging down on you.",
-    " You barely manage to roll out of the way, the sharp blade missing your side by mere inches. The force of the swing creates a gust of wind that sends leaves scattering into the air.",
-    "You scramble to your feet, heart racing, and glance over your shoulder. The battle rages behind you, but in the thick of the trees, you have a moment to breathe.",
-    "Your hands still feel the sting of the rope, but the freedom is a fleeting relief. You know you can’t stay here for long—each second is a ticking clock, and the sound of footsteps approaching makes it clear that the danger isn’t over.",
-    "Looking around desperately, you see a small path leading deeper into the woods, a potential escape. But the sound of battle is closing in, and the shadows around you feel like they’re closing in too. Then a man slams against a tree in front of you unconscious.",
-    "Coming through the brush wearily, glancing around the open field bodies scatter around the area.",
-    " What remains standing are the men from earlier there standing tall and proud as they begin to loot the bodies for anything useful.",
-    "Watching from afar you see that they have begun to head towards you. Looking down at a fallen knight you see a dagger connect to his hip taking the chance you grab it.",
-    "The weight is foreign to you but that wasn’t the main focus right now you needed to make sure you would make it out of here alive.",
-    "Of course you have the staff but that didn’t seem to be the best choice for this scenario, you crouch low, eyes narrowing as you saw the rebels draw close.",
-    "These were the same men who nearly cut you down but tied you up instead, you were just a stranger at the wrong place at the wrong time, they did not  wait for an explanation.",
-    "Now though– they seem hesitant. One of them, a man in bandages locks eyes with his bloodied blade still in hand, you shift uncomfortably under his gaze.",
-    " He holds his hands up as he sheathes his weapon the others follow his lead doing the same as him as, slowing their approach.",
-    "“We thought you were about to run off with our horse,” the bandaged man says, voice low and steady. “Didn’t know you were running from them.” ",
-    "“Looks like we owe you an apology” the tall one adds, stepping just close enough to see the dagger still clenched in your hand. “You gonna use that?”",
-    "You don’t answer right away. The staff across your back humming as it senses your tension and worry, the dagger small and crude being gripped hard by you. ",
-    "Taking a deep breath, you lower the dagger, the tension in your arms and muscles releasing. ",
-    "The tall man watches your every move. The small bit of trust you gave off was met with a cautious nod. ",
-    "“That's better,” His boots crunching softly against the forest floor “You aren’t the only one who’s had a bad day”",
-    "Looking around, your eyes lay on the others. Some scan over the treelines or look at you, while some look at you with curiosity.",
-    "“What's your name” The bandaged one asked ",
-    "You hesitate. After everything, names feel strange—too personal, too vulnerable. But before you can answer, he holds up a hand.",
-    "“Never mind. Doesn’t matter right now. We’ll get to that later.” He gestures to the path behind you. “If you’re not with them, and you’re not trying to kill us, then we’re not enemies.”",
-    "You nod slowly, feeling your shoulders begin to drop from their battle-ready tension.",
-    "He points to the staff slung over your back. “That thing yours?”",
-    "You glance at it, and something flickers in his expression—interest, maybe concern. He doesn’t press, but you can tell the question wasn’t idle.",
-    "“We’ve got a camp not far from here,” he says. “Food. Fire. Some answers, if you want them.”",
-    "The wind rustles through the trees again, carrying the scent of blood and smoke. Behind you is the forest—quiet, uncertain, and full of unknowns. Ahead of you, a chance. Maybe not safety. But a chance.",
+
 ]
 
 let partTwoPicture = [
@@ -147,144 +173,7 @@ let partTwoPicture = [
 // Part three
 
 let partThreeText = [
-    "You decide to follow.",
-    "The trek to the rebels’ camp is quiet. No one presses you for words, and you’re thankful for it. The forest seems to breathe with you now, the danger behind you—not gone, but quieted. ",
-    "When you reach the camp, it’s little more than a circle of tents and a firepit that crackles with fresh flames. But it feels… safe. Or at least, safer than the blood-soaked clearing you left behind.",
-    "That’s when you meet him—Bob.",
-    "He’s older than you expected. Not ancient, but worn, like someone who’s seen too many seasons of war and too few of peace.",
-    " His cloak is threadbare, his sword scuffed, but when he looks at you, it’s like he sees right through to your spine.",
-    "“They say you tried to take a horse,” he says, a flicker of amusement in his voice. “And now you’re here with a staff strapped to your back and questions in your eyes.”",
-    "You don’t deny it. What’s the point?",
-    "Bob gestures for you to sit by the fire, where the warmth spreads through your fingers and the sting of rope burns starts to fade. He doesn’t ask your whole story.",
-    "He doesn’t ask your whole story. Maybe he already knows it—or maybe he’s smart enough to wait.",
-    "“We’re heading to the dungeon at Elderglen,” he says finally. “Old place. Dangerous. Cursed, if you believe the stories. But we think there’s something in there that can turn the tide of this war.”",
-    "He looks at you then. Really looks.",
-    "“Word is, you’ve got power. Maybe you haven’t figured it out yet, maybe you don’t want to—but we could use you. And maybe… maybe you could use the purpose.”",
-    "His words hang in the air, heavy.",
-    "But your heart… it’s somewhere else. Somewhere quieter. Somewhere beside the graves you never got to dig. The home that’s no longer standing. The family you weren’t there to protect.",
-    "Adventure? Purpose? Redemption? Or just peace—time to grieve without blades, without blood, without pretending to be a hero.",
-    "The fire crackles between you and Bob, casting shadows across the tents. Everyone’s watching without watching—giving you the space to decide.",
-    "Do you go to the dungeon with them… or walk away and finally let yourself mourn?",
-    "Your hand brushes against the staff. It doesn’t speak. But your soul does. What does it say?",
-    "You chose to go. You chose purpose over grief.",
-    " Ill go you spoke letting go of the past for now. as well with an held breath.",
-    "Bob nods, a small smile breaking through his weathered face. “Good. We could use someone like you.”",
-    "Like me?",
-    " Yes like you, you may not see it now but you hold a great power one that will decide the fate of these lands.",
-    "You couldn't believe what he was saying, but you nodded anyway.",
-    "The night went on. The fire crackled and the stars twinkled above. Laughter filled the air as food was passed around. Stories told", 
-    "You felt welcome, like you belonged. But the weight of what had happended to you still lingered  in that bcak of your mind.",
-    "Fininishing your meal you sighed comfortably taking in the atmosphere. Setting your plate down you looked around at the others. Who were they? and why have they chose to fight against the Aiel? What had happended to them to form together like this?",
-    "The rebelion was relatively small. They had only formed recently after the Aiel had begun to invade. 2 months now since the first successful invasion. The war between the Gatish and the Aiel had been going on for years now. But the Aiel had never been this close to your home before.",
-    "Taking a deep breath you stood up and made your way over to Bob. He was sitting by a other fire, a small smile on his face as he watched the others. He looked up as you approached.",
-    "What is it? He asked, his voice low and content. ",
-    "Where do i sleep tonight?",
-    "Ah right, I almost forgot. He chuckled, standing up and stretching. You can sleep in the tent over there. He pointed to a small tent off to the side.",
-    "You nod in understanding and make your way over to the tent. It was small but it was cozy in a way. You crawl inside and lay down on the ground, closing your eyes. The sounds of the camp fade away as you slowly drift off to sleep.",
-    "The soft chirps of birds fill the air as the sun rises, the light filtering through the trees and into your tent. The light beems into your eyes, waking you up. You groan and roll over, trying to block out the invading light with your arm.",
-    "The camp was quiet, the only sounds being the soft rustling of leaves and the distant sound of water flowing. You take a deep breath, inhaling the fresh scent of pine and earth. Sitting up you stretch your arms above your head, feeling the stiffness in your muscles from sleeping on the ground. Taking a moment to gather yourself you crawl out of the tent feeling as the cool morning brezze hit your skin.",
-    "You look around the camp, taking in the sight of the tents and the fire pit. The others were still asleep, their forms curled up in their tents. Glancing over at the fire pit you see Bob sitting there, poking the embers with a stick.",
-    "He looks up as you approach, a smile on his face. He puts the stick next to him and gestures for you to sit down.",
-    "Taking a seat, as you sit down you feel the warmth of the fire on your skin. the smell of smoke fills the air, mixing with the scent of pine.",
-    "Good morning, he says, his voice low and gravelly. How did you sleep?",
-    "Good.. surprisingly. You reply, your voice still thick with sleep.",
-    "Well that's good to hear. He chuckles. We have a long day ahead of us. Today we will be heading to the dungeon. I hope you're ready for it.",
-    "How far is it?",
-    "From here? Maybe 2 days if we take it slow. But if we push ourselves we can make it in a day and a half.",
-    "That's not too bad. What do you think we will find there?",
-    "Well the stories say there is a dragon slumbering in the dungeonn. But i doubt that is the truth, Legends are always exaggerated. But i dop believe there is something there. Something that would be useful to us to turn the battle to our side",
-    "Could there really be somthing like that there?",
-    "Possibly. But we won't know until we get there. And even then it may not be what we expect.",
-    "Are we waiting for the others to wake up? or are we leaving now?",
-    "We will wait for a bit. I want to give them some time to rest. We will leave in an hour or so.",
-    "Nodding you look around the camp, taking in the sights and sounds. Heading back to the small tent you crawl inside and lay down deciding to rest a little while the others stir.",
-    "THe sounds of the others at he camp begin to grow louder as they wake. THe smell of what seems to be breakfast fills the air. Sitting up you crawl out of the tent and make your way over to the big bonfire that was cooking the meal everyone was going to eat.",
-    "You see Bob standing over the fire, stirring a pot of something that seems like stew. The aroma fills the air, making your stomach growl.",
-    "That smells good, you say, walking over to him.",
-    "Better be good, used the best we had. Gonna be a while before we can eat like this again.",
-    "Why is that?",
-    "Well who knows how long we're going to be in the dungeon. And we don't even know what we'll find or face there",
-    "So you assume we'll die there?",
-    "Yep. Seems harsh but im just being realistic. There had been many that had entered and never returned home.",
-    "You swallow  drly, The thought of dying was sometyhing you didn't what to be thinking about in the current momemnt.",
-    "Okay, Are we leaving after breakfast?",
-    "Yes. We will eat and then pack up the camp. We will leave as soon as we can.",
-    "After speaking to Bob you sit on a log that was near the fire, the others make their way and sit as they get their portions of the stew. The sounds of chatter and laughter fill the air as they eat its as if they wouldn't be going to unknown location that could lead to their demise.",
-    "After a while you get your portion, The stew was warm and filling. The flavor was rich and savory. You eat slowly, savoring each bite. Whos knows this could very well be your last meal",
-    "Bringing the bowl to your lips you drink the last of it down, a final savoring taste of it as it seeps down your throat. Setting the bowl down glancing around you see the remaing members finish and help clean up the camp as departure looms overhead.",
-    "Bob walks over to you, patting your back as he grab the now empty bowl from your hands.",
-    "Get ready to leave, we will be heading out soon.",
-    "Yeah, I will be ready.",
-    "There new clothes for you in your tent. I thought you might want to change before we leave.",
-    "Oh. Thanks. surprise is written all over your face.",
-    "No problem. Just let me know if it fits or not.",
-    "Making your way back to the tent, You crawl inside spotting the clothes that were laid out. It was a simple outfit, a tunic and pants. Slipping off your old clothes you put on the new ones.",
-    "You grab your staff it was set aside and strap it to your back. Crawling out of the tent and making your way over to Bob where he was putting out the fire",
-    "Okay, everyone is ready to go. He says, looking at you.",
-    "The other were all around putting bags on their horses and carriages. Turning around you see your ternt being packed up and put away. as its thrown into the carriage.",
-    "We better start moving, the nights heres are dangerous. Many hostile creatures roam this area at night.",
-    "Nodding and making your way over to the horse you had almost taken earlier. You grab the reins and lead it over to Bob.",
-    "You want me to ride on one your horses? You ask looking at him.",
-    "I trust you to ride it. But if you fall off or get hurt its not my fault.",
-    "You mount the horse, feeling the weight of the saddle beneath you. The horse snorts, shifting its weight as you settle in.",
-    "You know how to ride, right?",
-    "Yeah, I can ride.",
-    "Alright then. He says, mounting his own horse.",
-    "Bob gives the signal to move out, and the group begins to ride. The sound of hooves pounding against the ground fills the air as you all make your way through the forest.",
-    "The trees tower over the group, Their branches swaying in the wind. The sun Filters through the leaves, casting obscured shadows on the ground.",
-    "The hooves of the horses drum into the earth, the sound echoing through the woods. The air is thick with the scent of pine and greenery,",
-    "The forest thickens their hooves muffled by the abundent foliage placed among the floor beneath them. The path grows narrow as the trees seems to close around you.",
-    "A low growl slips through the trees, Your horse snorts, shifting nervously beneath you. Ears twitching, Your not the only one who heard it. Bob motions for the group to stop. Hands guiding to their weapons.",
-    "Sir! a Voice calls out from behind turing your head to see who was speaking.",
-    "We have compa-!",
-    "A blur of black fur lunges from the underbush, The man is knocked off his horse, The horse screams fill the air as its dragged sidesways into the trees. Swallowing hard you look around the group, the others were already on gaurd weapons drawed they were just waiting for the next attack.",
-    "A low growl escapes through the trees. It's as if it was all around them, The way it echoed thoughout the woods. Before they could react the beast attacks again. Rushes through brush slamming into the side of your horse along with you, Pinning you against a tree.",
-    "What the-! You scream",
-    "The horse falls to the ground as the beast slams you again into the tree. Causing it to crack with each hit. Its bares its teeth, It rears its head back as it snaps at you its mouth nearing clamping down on your head.",
-    "A deep crack echos in the area. The beast jerks as an arrow burries deep at its flank. The beast turns. Snarling at the group, its lips curled back reavling yellowed fangs. A massive beast its black fur dangles in long matted clumps.",
-    "You fall to the ground. The horse whinnies in pain as it tries to get back on its feet. Scrambling to your feet you grab the staff from your back ready for battle.",
-    //battle here or create a battle scene 
-    "Heaving hard breaths, you fall to the ground. There the beast lies dead and deafeated. The others were around wounded but breathing. Sitting up you glance around the area. The trees were broken, the ground lifted and torn. The smell of blood was punjet.",
-    "Bob stood over the beast, his weapon in hand. using his weapon he pokes at the beast. questioning if it was really dead. After a several minutes of poking and prodding he finally steps away from the corspe of the beast. ",
-    "Is eveyone alright? Bobs voice rang out. Louds groans filled the air signifying that they  were alive but not injured. ",
-    "The lunar sky stretched overhead, the bluish light perfectly cascading over the bandages of the wounded. They had been traveling for hours now, The encounter with the beast already fading into the past.",
-    "The horses stopped as they reached a small open clearing. Thakfully you and the group had exited the woods a while ago. The trees were now behind you, the path ahead was clear. The group stopped with Bobs raised hand. ",
-    "We will rest here for the night. He said looking around the area. Only a few more hours till reach the dungeon. We will need the rest. He dismounted his horse. You do the same following his lead, wincing as your feet hit the ground the vibrations casuing pain within the chest.",
-    "The others follow suit, as they dismounted the horse and gathered the gear of the back of their horses and carriages. Within an hour, the camp was set — the tents laid out, and fires lit. You stood away from the others, standing under a tree a little away from the camp. Staring up into the sky you see the bluish hue of the moon above you. With a tired motion you removed the staff off your back, resting it against the rough bark leaning into the tree.",
-    "Turning your head, you look at the staff against the tree, the runes glimmering in the moonlight. You pull the staff closer, the old wood scraping against the bark of the tree. Looking over the weapon, the runes begin to glow softly before they glow brighter. The light illuminates the area around you, capturing you within the light.", 
-    "Warmth embraces your body, the ache in your ribs fading away. The staff hums softly, its vibrations pulsing through your bones. A wave of relief overcomes you, you feel great.",
-    "The light dies down, the runes returning to their orginal state. The staff sit in your hands, the weight of it feeling lighter. Your hand hovers over your ribs. shaking slightly you touch the area where the beast had slammed into you. The pain was gone, the bruises were gone. The staff healed you..? ",
-    "Standing up, you look towards the camp wondering if that light show had been seen by the others. Pushing off the tree you make your way over to the your tent that was set up. Today was rough, and you needed to rest.",
-    "The cirping of birds filled the air as the suns rays filltered through the trent you slept in. The warmth was nice, but the light was blinding sitting up and strenching you crawl out of the tent, seeing the others packing up again.",
-    "There you are, bob said, walking over to you. I was wondering when you would wake up.",
-    "Right, sorry. You say rubbing the drowsiness from your eyes. He gestures for you to follow, come on. We need to get moving.",
-    "AS you follow, you turn back and see your tent being pack up as another memeber walks ups to you handing your staff back to you. You take it, the runes glimmer softly in your hands. Strapping it to your back to continure to follow Bob to where the horses are being saddled up. Getting up on the one you rode before you grab the reins and lead it over to Bob.",
-    "I never asked, YOu look at him curiously. Does this horse have a name?",
-    "Bob chuckles slightly, No. We never got around to naming that horse your on at the moment. You wanna give it a name?",
-    "Sure, why not. You say, thinking for a moment. How about... Roach?",
-    "Roach? Bob raises an eyebrow. Of all the names Roach?",
-    "Yep. you nod your head in agreement. Roach it is.",
-    "Alright then. By he time you have finished talking the camp was all packed up and ready to go. The horses were saddled up and the carriages were ready to go. Bob gives the signal to move out, and the group begins to ride. The sound of hooves pounding against the ground fills the air as you all make your way through the plains.",
-    "The sun rose to its highest point, The rays shining down at full force. The heat was building but you and the group weren't tthat far from the dungeon. Bob turned back to the group, his voice ringing out over the sound of hooves.",
-    "WE'RE ALMOST THERE! He shouted, his voice echoing through the air. The group cheered, the sound of excitement filling the air. An hour had passed and the group was finally nearing the dungeon.",
-    "The wind rolled across the vast expanse of the plains, the tall grass bending in rippling waves. At the foot of the distant mountains, a dark cleft broke through the very bones of the stone. Its jagged edges were weathered and split, as if the earth’s face had been frozen in a silent scream—agony etched deep into the rock.",
-    "Isn't that welcoming Bob said, his voice low and gravelly. The dungeon was a dark gash in the earth, a wound that had never healed. It was a place of nightmares, a place where the light of day dared not tread.",
-    "I don't think more than 3 can fit in there at one, Bob said, looking at the group. We will have to go in as sets of three. Be on guard and be careful. We don't know what is in there.",
-    "The men nooded, they scattered around gathering all the supplies they needed for the adventure ahead. You stood by your horse, anxiously waiting for the others to finish. The staff slighty pulsed against your back. the runes glimmering softly. ",
-    "You went near the entrance, even from the outside the air was thick and heavy—Dark and avoid of life. Walking into the darkness you felt the air shift, a low rumble echoed though the stone each footstep you took into the cave. Looking behind the stone began to shift and move, The entrance slamming shut behind you. The moutains mouth was shut finally silencing its eternal, frozen scream.  ",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+    
 ]
 
 let partFourText = [
