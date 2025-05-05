@@ -231,7 +231,7 @@ let partThreeText = [
     "Turning your head, you look at the staff against the tree, the runes glimmering in the moonlight. You pull the staff closer, the old wood scraping against the bark of the tree. Looking over the weapon, the runes begin to glow softly before they glow brighter. The light illuminates the area around you, capturing you within the light.", 
     "Warmth embraces your body, the ache in your ribs fading away. The staff hums softly, its vibrations pulsing through your bones. A wave of relief overcomes you, you feel great.",
     "The light dies down, the runes returning to their orginal state. The staff sit in your hands, the weight of it feeling lighter. Your hand hovers over your ribs. shaking slightly you touch the area where the beast had slammed into you. The pain was gone, the bruises were gone. The staff healed you..? ",
-    "Standing up, you look towards the camp wondering if that light show had been seen by the others. Pushing off the tree you make your way over to the group huddled around the fire. The flames of the fire flicker ",
+    "Standing up, you look towards the camp wondering if that light show had been seen by the others. Pushing off the tree you make your way over to the group huddled around the fire. The flames of the fire flicker. Looks whos back Bob says, a smile on his face. You sit down next to him, the warmth of the fire washing over you.",
     "",
     "",
     "",
