@@ -132,9 +132,28 @@ var startButton = document.getElementById("start");
 var gameTitle = document.getElementById("title");
 
 startButton.addEventListener("click", async function () {
+    healthRemainThree();
+    staminaRemainThree();
+    detectionRemainNone();
     await transition()
     await wait(1000);
+    document.getElementById("image").style.backgroundImage = `url(img/door.png)`;
     transitionNot();
+    continueButton.style.display = "none";
+        choiceOne.style.display = "block";
+        choiceTwo.style.display = "block";
+        choiceOne.innerHTML = partOneChoiceOne[0];
+        choiceTwo.innerHTML = partOneChoiceOne[1];
+        choiceOne.onclick = function() {
+            storyProgress = 0;
+            currentDialogue = 2;
+            playDialogue();
+        }
+        choiceTwo.onclick = function() {
+            storyProgress = 0;
+            currentDialogue = 1;
+            playDialogue();
+        }
 })
 
 // Remove Start
@@ -246,14 +265,32 @@ function changePicture(storyPart, imageName) {
 
 function updateScene() {
     if (storyProgress === 0 && currentDialogue === 1) {
-        changePicture(0, 1); // Manually set the image for the second dialogue
+        changePicture(0, 1); 
     }
-    else if (storyProgress === 0 && currentDialogue === 3) {
-        changePicture(0, 0); // Manually set the image for the third dialogue
+    else if (storyProgress === 0 && currentDialogue === 2) {
+        changePicture(0, 2); 
     }
-    else if (storyProgress === 1 && currentDialogue === 0) {
-        changePicture(1, 2);
+    else if (storyProgress === 0 && currentDialogue === 5) {
+        changePicture(0, 3);
     }
+    else if (storyProgress === 0 && currentDialogue === 6) {
+        changePicture(0, 4);
+        reloadGame();
+    }
+    else if (storyProgress === 0 && currentDialogue === 7) {
+        changePicture(0, 5);
+    }
+    else if (storyProgress === 0 && currentDialogue === 8) {
+        changePicture(0, 6);
+        reloadGame();
+    }
+}
+
+function reloadGame() {
+    setTimeout(() => {
+        window.location.reload();
+    continueButton.style.display = "none";
+    }, 3000);
 }
 
 // Song
@@ -282,15 +319,62 @@ var choiceTwo = document.getElementById("choicetwo");
 var choiceThree = document.getElementById("choicethree");
 
 function buttonChoice() {
-    if (storyProgress === 0 && currentDialogue === 25) {
+    if (storyProgress === 0 && currentDialogue === 1) {
         continueButton.style.display = "none";
         choiceOne.style.display = "block";
         choiceTwo.style.display = "block";
         choiceOne.innerHTML = partOneChoiceOne[0];
         choiceTwo.innerHTML = partOneChoiceOne[1];
         choiceOne.onclick = function() {
-            storyProgress = 1;
-            currentDialogue = 0;
+            storyProgress = 0;
+            currentDialogue = 2;
+            playDialogue();
+        }
+        choiceTwo.onclick = function() {
+            storyProgress = 0;
+            currentDialogue = 1;
+            playDialogue();
+        }
+    }
+    else if (storyProgress === 0 && currentDialogue === 3 || storyProgress === 0 && currentDialogue === 4) {
+        continueButton.style.display = "none";
+        choiceOne.style.display = "block";
+        choiceTwo.style.display = "block";
+        choiceThree.style.display = "block";
+        choiceOne.innerHTML = choiceSelectTwo[0];
+        choiceTwo.innerHTML = choiceSelectTwo[1];
+        choiceThree.innerHTML = choiceSelectTwo[2];
+        choiceOne.onclick = function() {
+            storyProgress = 0;
+            currentDialogue = 5;
+            playDialogue();
+        }
+        choiceTwo.onclick = function() {
+            storyProgress = 0;
+            currentDialogue = 9;
+            playDialogue();
+        }
+        choiceThree.onclick = function() {
+            storyProgress = 0;
+            currentDialogue = 4;
+            playDialogue();
+        }
+    }
+    else if (storyProgress === 0 && currentDialogue === 5) {
+        continueButton.style.display = "none";
+        choiceOne.style.display = "block";
+        choiceTwo.style.display = "block";
+        choiceThree.style.display = "none";
+        choiceOne.innerHTML = choiceSelectThree[0];
+        choiceTwo.innerHTML = choiceSelectThree[1];
+        choiceOne.onclick = function() {
+            storyProgress = 0;
+            currentDialogue = 6;
+            playDialogue();
+        }
+        choiceTwo.onclick = function() {
+            storyProgress = 0;
+            currentDialogue = 7;
             playDialogue();
         }
     }
@@ -359,9 +443,9 @@ function staminaRemainTwo() {
 }
 
 function staminaRemainThree() {
-    healthOne.style.backgroundColor = "yellow";
-    healthTwo.style.backgroundColor = "yellow";
-    healthThree.style.backgroundColor = "yellow";
+    staminaOne.style.backgroundColor = "yellow";
+    staminaTwo.style.backgroundColor = "yellow";
+    staminaThree.style.backgroundColor = "yellow";
 }
 
 // Detection
@@ -395,7 +479,9 @@ function detectionRemainThree() {
 }
 
 function updateStatus() {
-    if (storyProgress === 0 && currentDialogue === 2) {
+    if (storyProgress === 0 && currentDialogue === 1) {
         healthRemainThree();
+        staminaRemainThree();
+        detectionRemainThree();
     }
 }

@@ -127,63 +127,35 @@ let partOneText = [
 
 ]
 
-
-
-
-
-
- 
-
-
 partOneChoiceOne = [
-    "Run away",
-    "Stay and fight"
+    "Open",
+    "Walk down hallway"
+]
+
+choiceSelectTwo = [
+    "left",
+    "right",
+    "center",
+]
+
+choiceSelectThree = [
+    "punch",
+    "run",
 ]
 
 let partOnePicture = [
-    "/img/grass.jpg",
-    "/img/house.jpg",
-    "/img/staffimg.jpg",
+    "img/door.png",
+    "img/hallway.png",
+    "img/foyer.png",
+    "img/leftdoor.png",
+    "img/punch.png",
+    "img/run.png",
+    "img/idle.png",
 ]
 
+let dialoguePartText = [partOneText]
+let dialoguePartPicture = [partOnePicture]
 
-partwoChoiceOne = [
-    "Follow",
-    "Decline"
-]
-
-parthreeChoiceone = [
-    "Go",
-    "Stay"
-]
-
-
-// Part two
-
-let partTwoText = [
-
-]
-
-let partTwoPicture = [
-    "/img/grass.jpg",
-    "/img/house.jpg",
-    "/img/staffimg.jpg",
-]
-
-// Part three
-
-let partThreeText = [
+// let gameSong = [
     
-]
-
-let partFourText = [
-    "four",
-    "second four",
-]
-
-let dialoguePartText = [partOneText, partTwoText, partThreeText, partFourText]
-let dialoguePartPicture = [partOnePicture, partTwoPicture]
-
-let gameSong = [
-    
-]
+// ]

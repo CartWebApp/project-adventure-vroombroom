@@ -28,8 +28,8 @@ body {
 }
 
 #image {
-    background-image: url(/img/grass.jpg);
-    background-size: cover;
+    background-image: url(/img/titlecover.png);
+    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
     width: 300px;
@@ -123,8 +123,10 @@ body {
 }
 
 #title {
-    color: white;
+    color: red;
+    text-shadow: 1px 1px black;
     text-align: center;
+    display: none;
 }
 
 #start {
