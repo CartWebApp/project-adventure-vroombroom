@@ -479,9 +479,21 @@ function detectionRemainThree() {
 }
 
 function updateStatus() {
-    if (storyProgress === 0 && currentDialogue === 1) {
+    if (storyProgress === 0 && currentDialogue === 7) {
+        healthRemainThree();
+        staminaRemainTwo();
+        detectionRemainTwo();
+    } else if (storyProgress === 0 && currentDialogue === 6) {
+        healthRemainNone();
+        staminaRemainTwo();
+        detectionRemainThree();
+    } else if (storyProgress === 0 && currentDialogue === 5) {
         healthRemainThree();
         staminaRemainThree();
+        detectionRemainThree();
+    } else if (storyProgress === 0 && currentDialogue === 8) {
+        healthRemainNone();
+        staminaRemainTwo();
         detectionRemainThree();
     }
 }
